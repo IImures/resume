@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Resume of Your Name — Role, skills, experience, and projects." />
+    <title>Your Name — Resume</title>
+
+    <!-- Open Graph (nice link previews) -->
+    <meta property="og:title" content="Your Name — Resume" />
+    <meta property="og:description" content="Role • Skills • Experience • Projects • Contact" />
+    <meta property="og:type" content="website" />
+
+    <!-- Optional favicon (add /favicon.ico to your repo if you want) -->
+    <link rel="icon" href="favicon.ico" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <a class="skip-link" href="#content">Skip to content</a>
+
+    <header class="container header">
+      <div class="header__main">
+        <h1 class="name">Your Name</h1>
+        <p class="headline">Your Role / Title • City, Country • Open to Remote</p>
+      </div>
+
+      <div class="header__actions">
+        <button class="theme-toggle" type="button" id="themeToggle" aria-label="Toggle dark mode">
+          Toggle theme
+        </button>
+        <a class="btn" href="#contact">Contact</a>
+        <!-- Optional: link to a PDF in your repo -->
+        <!-- <a class="btn btn--ghost" href="YourName_Resume.pdf">Download PDF</a> -->
+      </div>
+
+      <div class="header__meta">
+        <a href="mailto:you@email.com">you@email.com</a>
+        <span class="dot">•</span>
+        <a href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noreferrer">LinkedIn</a>
+        <span class="dot">•</span>
+        <a href="https://github.com/yourhandle" target="_blank" rel="noreferrer">GitHub</a>
+        <span class="dot">•</span>
+        <a href="https://your-portfolio.example" target="_blank" rel="noreferrer">Portfolio</a>
+      </div>
+    </header>
+
+    <main id="content" class="container">
+      <section class="card">
+        <h2>Summary</h2>
+        <p>
+          2–4 lines about what you do, your strongest skills, and the outcomes you drive.
+          Example: “Backend engineer focused on scalable APIs and data pipelines. Built systems handling
+          millions of events/day, improving reliability and reducing cloud cost.”
+        </p>
+
+        <ul class="highlights">
+          <li><strong>Top skill:</strong> e.g., TypeScript/Node, Python, Go, Java</li>
+          <li><strong>Domain:</strong> e.g., FinTech, e-commerce, B2B SaaS, ML</li>
+          <li><strong>Impact:</strong> e.g., reduced latency 35%, increased conversion 12%</li>
+        </ul>
+      </section>
+
+      <section class="grid">
+        <section class="card">
+          <h2>Skills</h2>
+          <div class="tags">
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">React</span>
+            <span class="tag">Node.js</span>
+            <span class="tag">Python</span>
+            <span class="tag">SQL</span>
+            <span class="tag">AWS</span>
+            <span class="tag">Docker</span>
+            <span class="tag">CI/CD</span>
+          </div>
+
+          <div class="two-col">
+            <div>
+              <h3 class="subhead">Strengths</h3>
+              <ul>
+                <li>System design</li>
+                <li>Performance optimization</li>
+                <li>Testing & reliability</li>
+              </ul>
+            </div>
+            <div>
+              <h3 class="subhead">Tools</h3>
+              <ul>
+                <li>GitHub Actions</li>
+                <li>PostgreSQL</li>
+                <li>Kubernetes</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Projects</h2>
+
+          <article class="item">
+            <div class="item__top">
+              <h3>Project Name</h3>
+              <div class="item__links">
+                <a href="https://github.com/yourhandle/project" target="_blank" rel="noreferrer">Code</a>
+                <span class="dot">•</span>
+                <a href="https://project-demo.example" target="_blank" rel="noreferrer">Live</a>
+              </div>
+            </div>
+            <p class="muted">One sentence: what it is + who it’s for.</p>
+            <ul>
+              <li>What you built + key tech (e.g., “Next.js + Supabase + Stripe”).</li>
+              <li>Outcome/impact: users, performance, cost, time saved, etc.</li>
+            </ul>
+          </article>
+
+          <article class="item">
+            <div class="item__top">
+              <h3>Another Project</h3>
+              <div class="item__links">
+                <a href="https://github.com/yourhandle/another-project" target="_blank" rel="noreferrer">Code</a>
+              </div>
+            </div>
+            <p class="muted">Short description.</p>
+            <ul>
+              <li>Highlight something impressive: scale, algorithm, UI, DX, etc.</li>
+            </ul>
+          </article>
+        </section>
+      </section>
+
+      <section class="card">
+        <h2>Experience</h2>
+
+        <article class="item">
+          <div class="item__top">
+            <h3>Company — Role</h3>
+            <div class="muted">Jan 2023 – Present • City / Remote</div>
+          </div>
+          <p class="muted">Team/product context in 1 sentence.</p>
+          <ul>
+            <li><strong>Impact:</strong> Achieved X by doing Y (use numbers: %, $, time, scale).</li>
+            <li><strong>Ownership:</strong> Led / designed / shipped feature A used by N users.</li>
+            <li><strong>Reliability:</strong> Improved uptime/latency; added tests/monitoring.</li>
+          </ul>
+          <div class="tags small">
+            <span class="tag">Tech 1</span><span class="tag">Tech 2</span><span class="tag">Tech 3</span>
+          </div>
+        </article>
+
+        <article class="item">
+          <div class="item__top">
+            <h3>Previous Company — Role</h3>
+            <div class="muted">Jun 2020 – Dec 2022 • City</div>
+          </div>
+          <ul>
+            <li>Bullet with a measurable result.</li>
+            <li>Bullet showing scope/complexity.</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="grid">
+        <section class="card">
+          <h2>Education</h2>
+          <div class="item">
+            <div class="item__top">
+              <h3>University Name</h3>
+              <div class="muted">BSc in Computer Science • 2016 – 2020</div>
+            </div>
+            <p class="muted">Optional: thesis, honors, relevant coursework.</p>
+          </div>
+        </section>
+
+        <section class="card">
+          <h2>Certifications</h2>
+          <ul>
+            <li>Certification Name — Issuer (Year)</li>
+            <li>Certification Name — Issuer (Year)</li>
+          </ul>
+        </section>
+      </section>
+
+      <section class="card" id="contact">
+        <h2>Contact</h2>
+        <p>
+          Best way to reach me: <a href="mailto:you@email.com">you@email.com</a>
+        </p>
+        <div class="contact-row">
+          <a class="btn" href="mailto:you@email.com">Email</a>
+          <a class="btn btn--ghost" href="https://www.linkedin.com/in/yourhandle" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <a class="btn btn--ghost" href="https://github.com/yourhandle" target="_blank" rel="noreferrer">
+            GitHub
+          </a>
+        </div>
+      </section>
+
+      <footer class="footer muted">
+        <span>© <span id="year"></span> Your Name</span>
+        <span class="dot">•</span>
+        <span>Built for GitHub Pages</span>
+      </footer>
+    </main>
+
+    <script>
+      // Theme toggle (persists)
+      const key = "resume-theme";
+      const root = document.documentElement;
+      const btn = document.getElementById("themeToggle");
+
+      function applyTheme(t) {
+        root.dataset.theme = t;
+        localStorage.setItem(key, t);
+      }
+
+      const saved = localStorage.getItem(key);
+      if (saved) applyTheme(saved);
+
+      btn?.addEventListener("click", () => {
+        const next = root.dataset.theme === "dark" ? "light" : "dark";
+        applyTheme(next);
+      });
+
+      // Footer year
+      document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+  </body>
+</html>
