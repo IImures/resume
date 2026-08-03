@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -21,6 +21,13 @@
   </head>
 
   <body>
+    <div class="ambient" aria-hidden="true">
+      <div class="ambient__blob ambient__blob--1"></div>
+      <div class="ambient__blob ambient__blob--2"></div>
+      <div class="ambient__blob ambient__blob--3"></div>
+      <div class="ambient__blob ambient__blob--4"></div>
+    </div>
+
     <a class="skip-link" href="#content">Skip to content</a>
 
     <header class="container hero">
@@ -271,6 +278,15 @@
             <div class="item__top">
               <div>
                 <h3>Polish-Japanese Academy of Computer Technology (PJATK)</h3>
+                <p class="item__meta">Warsaw, Poland • Master’s degree in Computer Science • 2026 – 2027</p>
+              </div>
+            </div>
+            <p class="muted">Currently pursuing a Master’s degree in Computer Science.</p>
+          </div>
+          <div class="item">
+            <div class="item__top">
+              <div>
+                <h3>Polish-Japanese Academy of Computer Technology (PJATK)</h3>
                 <p class="item__meta">Warsaw, Poland • Bachelor’s degree in Computer Science • 2022 – 2026</p>
               </div>
             </div>
@@ -283,15 +299,6 @@
                 >Perspektywy</a
               >.
             </p>
-          </div>
-          <div class="item">
-            <div class="item__top">
-              <div>
-                <h3>Polish-Japanese Academy of Computer Technology (PJATK)</h3>
-                <p class="item__meta">Warsaw, Poland • Master’s degree in Computer Science • 2026 – 2027</p>
-              </div>
-            </div>
-            <p class="muted">Currently pursuing a Master’s degree in Computer Science.</p>
           </div>
         </section>
 
@@ -347,27 +354,6 @@
       </footer>
     </main>
 
-    <script>
-      const key = "resume-theme";
-      const root = document.documentElement;
-      const btn = document.getElementById("themeToggle");
-
-      function applyTheme(theme) {
-        root.dataset.theme = theme;
-        localStorage.setItem(key, theme);
-      }
-
-      const saved = localStorage.getItem(key);
-      if (saved) {
-        applyTheme(saved);
-      }
-
-      btn?.addEventListener("click", () => {
-        const next = root.dataset.theme === "dark" ? "light" : "dark";
-        applyTheme(next);
-      });
-
-      document.getElementById("year").textContent = new Date().getFullYear();
-    </script>
+    <script src="assets/app.js?v=2" defer></script>
   </body>
 </html>
